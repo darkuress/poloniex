@@ -8,7 +8,7 @@ def createTimeStamp(datestr, format="%Y-%m-%d %H:%M:%S"):
     return time.mktime(time.strptime(datestr, format))
  
 class poloniex:
-    def __init__(self, APIKey, Secret):
+    def __init__(self):
         self.APIKey = "G7SVQE9N-M2NE1IDC-719XQTDK-BZVRCOTI"
         self.Secret = "9d2a70ab35af5b8befb8eaed803340e5d0beac5a906bdc54ee4608b671b8f1bf03df9df8ff62293c08e075f4f55b46cd9ebd77b7d94ba8b2d2015d6db9c66132"
  
