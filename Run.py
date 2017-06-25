@@ -76,7 +76,7 @@ class poloniexRun(Core.Poloniex):
         ratio = float(self.data['current_price'])/float(read_data['current_price'])
         print ratio
         
-        if ratio < 0.98 and read_data['hold'] == 'False':
+        if ratio < 0.97 and read_data['hold'] == 'False':
             #-  buy
             print 'buy'
             rate = float(self.data['current_price']) + 0.0001
@@ -86,7 +86,7 @@ class poloniexRun(Core.Poloniex):
             #- update json file
             self.updateData(hold = 'True')
             self.writeJson(self.data)
-        elif ratio > 1.02 and read_data['hold'] == 'True':
+        elif ratio > 1.03 and read_data['hold'] == 'True':
             #- sell
             print 'sell'
             rate = float(self.data['current_price']) - 0.0001
