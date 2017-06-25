@@ -71,6 +71,7 @@ class poloniexRun(Core.Poloniex):
             read_data = self.readJson()
         except:
             self.writeJson(self.data)
+            read_data = self.readJson()
         
         ratio = float(self.data['current_price'])/float(read_data['current_price'])
         print ratio
