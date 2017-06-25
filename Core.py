@@ -7,10 +7,10 @@ import hmac,hashlib
 def createTimeStamp(datestr, format="%Y-%m-%d %H:%M:%S"):
     return time.mktime(time.strptime(datestr, format))
  
-class poloniex:
+class Poloniex:
     def __init__(self):
-        self.APIKey = "G7SVQE9N-M2NE1IDC-719XQTDK-BZVRCOTI"
-        self.Secret = "9d2a70ab35af5b8befb8eaed803340e5d0beac5a906bdc54ee4608b671b8f1bf03df9df8ff62293c08e075f4f55b46cd9ebd77b7d94ba8b2d2015d6db9c66132"
+        self.APIKey = "ZK14KGOR-KVBPIZEU-PEURYUVM-SQCK3K3T"
+        self.Secret = "bb4d9a631ab5229e9c7e32042979a5d54a57c7cc68cd8d52e4928720eaecda3e231cf24bf3e21106b2c71050526225764b4fda4ae5443b2a2b716de7d453346f"
  
     def post_process(self, before):
         after = before
