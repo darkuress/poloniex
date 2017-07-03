@@ -9,8 +9,8 @@ def createTimeStamp(datestr, format="%Y-%m-%d %H:%M:%S"):
  
 class Poloniex:
     def __init__(self):
-        self.APIKey = "ZK14KGOR-KVBPIZEU-PEURYUVM-SQCK3K3T"
-        self.Secret = "bb4d9a631ab5229e9c7e32042979a5d54a57c7cc68cd8d52e4928720eaecda3e231cf24bf3e21106b2c71050526225764b4fda4ae5443b2a2b716de7d453346f"
+        self.APIKey = "SR4IRNHJ-KOP89JSP-2O8DKIL6-P4QMT1BC"
+        self.Secret = "48954c69d77e81d10ceaef2a3078eb2a461ba3d0760d02575102552d0b576f9f819bc5e22ce52b6cb7ae34df08937428a96d8e5c1e70b420c983cab2be245831"
  
     def post_process(self, before):
         after = before
